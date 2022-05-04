@@ -1,7 +1,16 @@
+# Azure login
+```ps
+    Connect-AzAccount -SubscriptionName 'your_account'
+```
+# Ensure correct subscription
+```ps
+    Set-AzContext -SubscriptionName 'your_account'
+```
+
 # create credential variables
 ```ps
 $username = 'demoadmin'
-$password = 'password123$*#@9'
+$password = 'password123$*#@9' -AsPlainText -Force
 $WindowsCred = New-Object System.Management.Automation.PSCredentail($username, $password)
 ```
 
