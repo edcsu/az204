@@ -30,7 +30,7 @@
 
 ### linux
 ```sh
-    az vn ceate \
+    az vm create \
         --resource-group "psdemo-rg" \
         --name "psdemo-linux-cli" \
         --image "ubuntults" \
@@ -41,8 +41,8 @@
 ```
 
 ```sh
-    az vn ceate \
-        --resource-group "psdemo-rg" \
+    az vm create \
+        --resource-group "psdemo-g" \
         --name "psdemo-linux-cli" \
         --image "ubuntults" \
         --admin-username "demoadmin" \
