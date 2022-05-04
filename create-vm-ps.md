@@ -47,7 +47,7 @@ New-AzVm `
     -ResourceGroupName 'psdemo-rg' `
     -Name 'psdemo-win-az' `
     -Image 'Win2019Datacenter' `
-    -Credential $WindowCred `
+    -Credential $WindowsCred `
     -OpenPorts 3389
 ```
 
