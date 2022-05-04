@@ -24,7 +24,7 @@
         --name "psdemo-win-cli" \
         --image "win2019datacenter" \
         --admin-username "demoadmin" \
-        --admin-password "demo$2#4@5*98d"
+        --admin-password "demo$2#4@5*98d" \
         --public-ip-sku "Basic"  
 ``` 
 
@@ -57,15 +57,15 @@
 ### windows
 ```sh
     az vm open-port \
-    --resource-group "psdemo-rg"
-    --name "psdemo-win-cli"
+    --resource-group "psdemo-rg" \
+    --name "psdemo-win-cli" \
     --port "3389"
 ```
 ### linux
 ```sh
     az vm open-port \
-    --resource-group "psdemo-rg"
-    --name "psdemo-linux-cli"
+    --resource-group "psdemo-rg" \
+    --name "psdemo-linux-cli" \
     --port "22"
 ```
 
@@ -74,15 +74,15 @@
 ### windows
 ```sh
     az vm list-ip-addresses \
-    --resource-group "psdemo-rg"
-    --name "psdemo-win-cli"
+    --resource-group "psdemo-rg" \
+    --name "psdemo-win-cli" \
 ```
 
 ### linux
 ```sh
     az vm list-ip-addresses \
-    --resource-group "psdemo-rg"
-    --name "psdemo-linux-cli"
+    --resource-group "psdemo-rg" \
+    --name "psdemo-linux-cli" \
 ```
 ## delete resource group
 ```sh
