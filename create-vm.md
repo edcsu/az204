@@ -22,9 +22,10 @@
     az vm create \
         --resource-group "psdemo-rg" \
         --name "psdemo-win-cli" \
-        --image "win2019datacenter"
-        --admin-username "demoadmin"
-        --admin-password "demo$2#4@5*98d"  
+        --image "win2019datacenter" \
+        --admin-username "demoadmin" \
+        --admin-password "demo$2#4@5*98d"
+        --public-ip-sku "Basic"  
 ``` 
 
 ### linux
@@ -35,7 +36,8 @@
         --image "ubuntults" \
         --admin-username "demoadmin" \
         --authentication-type "ssh" \
-        --ssh-key-value ~/.ssh/id_rsa.pub
+        --ssh-key-value ~/.ssh/id_rsa.pub \
+        --public-ip-sku "Basic"  
 ```
 
 ```sh
@@ -45,7 +47,9 @@
         --image "ubuntults" \
         --admin-username "demoadmin" \
         --authentication-type "ssh" \
-        --generate-ssh-keys
+        --generate-ssh-keys \
+        --public-ip-sku "Basic"  
+
 ```
 
 ## open vm port
