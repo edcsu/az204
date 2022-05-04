@@ -57,3 +57,8 @@ New-AzVm `
     -ResourceGroupName 'psdemo-rg' `
     -Name 'psdemo-win-az' | Select-Object IpAddress
 ```
+
+# Cleanup resources
+```ps
+    Remove-AzResourceGroup -Name 'psdemo-rg'
+```
